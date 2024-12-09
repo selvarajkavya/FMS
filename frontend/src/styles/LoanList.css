@@ -1,0 +1,103 @@
+/* Container for the table */
+.loan-list-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1c1c1c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.loan-list-container h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table Styles */
+.loan-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  color: white;
+}
+
+.loan-list-table th,
+.loan-list-table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #3a3a3a;
+}
+
+.loan-list-table th {
+  background-color: #4caf50; /* Green header */
+  color: white;
+}
+
+/* .loan-list-table tbody tr:nth-child(even) {
+  background-color: #333;
+}
+
+.loan-list-table tbody tr:nth-child(odd) {
+  background-color: #444;
+} */
+
+.loan-list-table td {
+  color: #f2f2f2;
+}
+
+/* Button Styling */
+.back-loan {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 37%;
+  width: 28%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close {
+  cursor: pointer;
+  font-size: 20px;
+}

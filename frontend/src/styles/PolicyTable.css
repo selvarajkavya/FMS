@@ -1,0 +1,76 @@
+.table-container {
+  width: 100%;
+  margin: auto;
+}
+
+.table-heading {
+  color: white;
+  text-align: center; /* Center aligns the heading */
+}
+
+.policy-table {
+  width: 100%;
+  color: white;
+  max-width: 500px;
+  margin: 4px auto;
+  padding: 30px;
+  background-color: #1c1c1c; /* Dark background */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures single border line */
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc; /* Adds separator between rows */
+}
+
+.table-container th {
+  background-color: #f4f4f4;
+  border-right: 1px solid #ccc; /* Adds separator between columns */
+}
+
+.table-container td {
+  border-right: 1px solid #ccc; /* Adds separator between columns */
+}
+
+.table-container tr:last-child td {
+  border-bottom: none; /* Removes bottom border from the last row */
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.updel {
+  display: flex;
+}
+
+.update,
+.delete {
+  height: 50px;
+  width: 50px;
+}

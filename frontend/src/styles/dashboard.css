@@ -1,0 +1,215 @@
+.dashboard-container {
+  /* max-width: 500px; */
+  min-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1c1c1c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.loan-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.loan-table th,
+.loan-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+  width: 20%;
+}
+
+td {
+  color: #ddd;
+}
+
+.loan-table th {
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 0; /* Keep the header fixed when scrolling */
+  z-index: 1;
+}
+
+/* Style the bell icon */
+.fas.fa-bell {
+  color: #ffa500; /* Set the color to orange or your preferred color */
+  font-size: 18px; /* Adjust the size */
+  cursor: pointer;
+  margin-left: 34%;
+}
+
+/* Dashboard.css */
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  height: 288px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.pie-chart {
+  max-width: 100%; /* Make the chart responsive */
+  max-height: 100%; /* Ensure the chart scales properly */
+}
+
+.pie-chart-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed; /* Ensures that the columns have a fixed width */
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.table thead,
+.table tbody {
+  display: block;
+}
+
+.table thead {
+  width: 100%;
+}
+
+.table tbody {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table td,
+.table th {
+  word-wrap: break-word;
+  white-space: nowrap; /* Optional: Allows content to break and prevent overflow */
+}
+
+.bar-chart-container {
+  background-color: #1a1a1a; /* Dark background for the chart container */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.bar-chart-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bar-chart-wrapper {
+  position: relative;
+  height: 400px; /* Set a fixed height for the chart */
+}
+
+@media (max-width: 768px) {
+  .bar-chart-wrapper {
+    height: 300px; /* Smaller height on mobile */
+  }
+}
+
+.fas.fa-bell {
+  font-size: 20px;
+}
+.fas.fa-bell.blue {
+  color: #3bafda;
+}
+.fas.fa-bell.green {
+  color: green;
+}
+.fas.fa-bell.red {
+  color: red;
+}
+.fas.fa-bell.gray {
+  color: gray;
+}
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.fas.fa-bell {
+  animation: zoomInOut 1s infinite;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom in and out effect for the reminder icon */
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fas.fa-bell {
+  animation: zoom-in-out 1.5s infinite;
+}
+
+.loan-table tbody {
+  width: 100%;
+  max-height: 291px; /* Set the desired max height */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds max-height */
+  display: block; /* Required to apply max-height and overflow to tbody */
+}
+
+.header-table {
+  /* background-color: #3bafda; */
+  color: rgb(65, 60, 60);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: -4px;
+}
+
+.loan-table thead {
+  display: table; /* Reset to table to maintain alignment */
+  width: 100%;
+}
+.loan-table tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-out {
+  transform: scale(0.9); /* Reduce size to create zoom-out effect */
+  transition: transform 0.5s ease-in-out;
+}

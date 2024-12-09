@@ -1,0 +1,45 @@
+.savings-list-container {
+  padding: 20px;
+  max-width: 800px;
+  background-color: black;
+  margin-left: 18%;
+  border-radius: 8px;
+}
+.back-save-btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 31%;
+  margin-left: 37%;
+}
+.text-savings {
+  margin-left: 0%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.savings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.savings-table th,
+.savings-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.savings-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* .savings-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
