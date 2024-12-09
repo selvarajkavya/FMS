@@ -21,6 +21,8 @@ const TransactionsTable = () => {
     transction_type: "",
     description: "",
   });
+
+  //testing the changes
   // Fetch transactions data when the component mounts
   // useEffect(() => {
   //   const fetchTransactions = async () => {
